@@ -33,6 +33,12 @@
       <groupId>${alfresco.groupId}</groupId>
       <artifactId>alfresco-repository</artifactId>
       <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework.social</groupId>
+          <artifactId>spring-social-facebook</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.alfresco.extension</groupId>
